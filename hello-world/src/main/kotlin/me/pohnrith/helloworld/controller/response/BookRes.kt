@@ -1,6 +1,5 @@
 package me.pohnrith.helloworld.controller.response
 
-import me.pohnrith.helloworld.model.Book
 import java.math.BigDecimal
 
 data class BookRes(

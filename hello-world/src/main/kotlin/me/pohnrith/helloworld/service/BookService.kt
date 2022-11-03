@@ -15,6 +15,7 @@ class BookService {
         Book(2, "Book B", "B Author", BigDecimal(89), BigDecimal(60))
     )
 
+
     fun listAll(author: String?, title: String?, price: BigDecimal?, priceFrom: BigDecimal?, priceTo: BigDecimal?) : List<BookRes> {
 
         var result = books.toList()
