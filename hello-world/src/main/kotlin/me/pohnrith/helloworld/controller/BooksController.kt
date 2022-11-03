@@ -15,11 +15,12 @@ class BooksController(
 ){
     private val log = LoggerFactory.getLogger(this::class.java)
 
+
     @GetMapping
     fun listAllBooks(
-        @RequestParam author: String?,
-        @RequestParam title: String?,
-        @RequestParam price: BigDecimal?,
+        @RequestParam author: String,
+        @RequestParam title: String,
+        @RequestParam price: BigDecimal,
         @RequestParam priceFrom: BigDecimal?,
         @RequestParam priceTo: BigDecimal?
     ) : List<BookRes> {
